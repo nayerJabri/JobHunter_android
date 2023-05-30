@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/inst_name"
+        android:text="Institution name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:text="Diplome Ingénieur"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inst_name"
+        android:layout_alignLeft="@+id/inst_name"
+        android:layout_alignStart="@+id/inst_name" />
+
+    <TextView
+        android:id="@+id/domain"
+        android:text="Système informatique et mobile"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/degree"
+        android:layout_alignLeft="@+id/degree"
+        android:layout_alignStart="@+id/degree" />
+
+    <TextView
+        android:id="@+id/start_date"
+        android:text="2017"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/domain"
+        android:layout_alignLeft="@+id/domain"
+        android:layout_alignStart="@+id/domain" />
+
+    <TextView
+        android:id="@+id/bla"
+        android:text="-"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/domain"
+        android:layout_toRightOf="@id/start_date"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/end_date"
+        android:text="2020"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/domain"
+        android:layout_toRightOf="@id/bla"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/resultbla"
+        android:text="Result: "
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_date"
+        android:layout_alignLeft="@+id/start_date"
+        android:layout_alignStart="@+id/start_date" />
+
+    <TextView
+        android:id="@+id/result"
+        android:text="14.5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_date"
+        android:layout_toRightOf="@id/resultbla"
+        android:layout_marginLeft="5dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyDark"
+        android:layout_below="@+id/result"/>
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OffersFragments.JobDetailsFragment"
+    android:background="@color/colorWhite">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+        android:id="@+id/progressBarJobOfferDetails"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@xml/progress_color"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedJobOfferDetails"
+        android:alpha="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cmp_pic"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:scaleType = "fitXY"
+                android:background="@drawable/ic_launcher_background"/>
+
+            <CheckBox
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginEnd="15dp"
+                android:layout_alignLeft="@id/cmp_pic"
+                android:layout_alignTop="@id/cmp_pic"
+                android:layout_alignRight="@id/cmp_pic"
+                android:layout_alignBottom="@id/cmp_pic"
+                app:layout_constraintRight_toRightOf="parent"
+                android:button="@drawable/btn_star_selector" />
+
+            <TextView
+                android:id="@+id/job_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Poste Developpeur Android"
+                android:textColor="#0B0B3B"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintTop_toBottomOf="@id/cmp_pic"
+                 />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/job_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/description"/>
+
+            <TextView
+                android:id="@+id/bla_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                android:text="Starting date "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#0B0B3B"/>
+
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/bla_start_date"
+                android:text="20/05/2018"
+                android:textSize="13sp"
+                android:textColor="#0B0B3B"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/start_date"/>
+
+            <TextView
+                android:id="@+id/bla_contract_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/start_date"
+                android:text="Contract type "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#0B0B3B"/>
+
+            <TextView
+                android:id="@+id/contract_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/bla_contract_type"
+                android:text="CDI"
+                android:textSize="13sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/contract_type"/>
+
+            <TextView
+                android:id="@+id/bla_career_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/contract_type"
+                android:text="Experience required "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#0B0B3B"/>
+
+            <TextView
+                android:id="@+id/career_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintTop_toBottomOf="@id/bla_career_req"
+                android:text="2 years"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/career_req"/>
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/career_req"
+                android:text="Skills "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#0B0B3B"/>
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tagcontainerLayout"
+                app:layout_constraintTop_toBottomOf="@id/skills"
+                android:layout_marginBottom="8dp"
+                app:container_enable_drag="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:horizontal_interval="10dp"
+                app:vertical_interval="10dp"
+                app:tag_clickable="false"
+                android:clickable="false"
+                />
+
+            <Button
+                android:alpha="0"
+                android:id="@+id/show_profile"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Show profile"
+                android:textColor="#fff"
+                android:background="@drawable/button_with_background"
+                app:layout_constraintTop_toBottomOf="@id/tagcontainerLayout"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/apply"/>
+
+            <Button
+                android:id="@+id/apply"
+                android:layout_width="150dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/button_with_background"
+                android:layout_height="wrap_content"
+                android:text="Apply now"
+                app:layout_constraintTop_toBottomOf="@id/tagcontainerLayout"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/show_profile"
+                android:layout_marginTop="30dp"/>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

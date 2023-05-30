@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/cert_label"
+        android:text="Certification Label"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/cert_auth"
+        android:text="Certification Authority"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cert_label"
+        android:layout_alignLeft="@+id/cert_label"
+        android:layout_alignStart="@+id/cert_label" />
+
+    <TextView
+        android:id="@+id/licencebla"
+        android:text="Licence N°: "
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cert_auth"
+        android:layout_alignLeft="@+id/cert_auth"
+        android:layout_alignStart="@+id/cert_auth" />
+
+    <TextView
+        android:id="@+id/cert_licence"
+        android:text="11525584"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cert_auth"
+        android:layout_toRightOf="@id/licencebla"/>
+
+    <TextView
+    android:id="@+id/cert_obtained"
+    android:text="Obtained :"
+    android:textSize="18sp"
+    android:textColor="@color/colorBlack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/licencebla"
+    android:layout_alignLeft="@+id/licencebla"
+    android:layout_alignStart="@+id/licencebla" />
+
+
+    <TextView
+        android:id="@+id/cert_obtained_date"
+        android:text="dec 2020"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cert_licence"
+        android:layout_toRightOf="@id/cert_obtained"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/cert_exp"
+        android:text="Expire: "
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cert_obtained"
+        android:layout_alignLeft="@+id/licencebla"
+        android:layout_alignStart="@+id/licencebla" />
+
+
+    <TextView
+        android:id="@+id/cert_expire_date"
+        android:text="dec 2020"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cert_obtained"
+        android:layout_toRightOf="@id/cert_exp"
+        android:layout_marginLeft="5dp" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyDark"
+        android:layout_below="@+id/cert_expire_date"/>
+
+</RelativeLayout>

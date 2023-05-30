@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@mipmap/baseline_dashboard_black_24"
+            android:title="Offers" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@mipmap/baseline_bookmarks_black_24"
+            android:title="Favorites" />
+        <item
+            android:id="@+id/nav_applications"
+            android:icon="@mipmap/baseline_save_black_24"
+            android:title="My Applications" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@mipmap/baseline_question_answer_black_24"
+            android:title="Contacts" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/baseline_account_circle_black_24"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@mipmap/baseline_clear_black_24"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedAddEduc"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MenuFragments.ProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Add volunteer experience item" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:theme="@style/TextInputLayoutLabelGrey">
+
+                <EditText
+                    android:id="@+id/edt_organisation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Organization"
+                    android:inputType="textMultiLine|text"
+                    android:textColor="@color/colorBlack"
+                    android:backgroundTint="@color/dark_gray"
+                    android:textColorHint="@color/dark_gray"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:imeOptions="actionNext"
+                android:theme="@style/TextInputLayoutLabelGrey">
+
+                <EditText
+                    android:id="@+id/edt_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Role"
+                    android:inputType="textMultiLine|text"
+                    android:textColor="@color/colorBlack"
+                    android:backgroundTint="@color/dark_gray"
+                    android:textColorHint="@color/dark_gray"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t4"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:imeOptions="actionNext"
+                android:theme="@style/TextInputLayoutLabelGrey">
+
+                <EditText
+                    android:id="@+id/edt_domain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cause"
+                    android:inputType="textMultiLine|text"
+                    android:textColor="@color/colorBlack"
+                    android:backgroundTint="@color/dark_gray"
+                    android:textColorHint="@color/dark_gray"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t5"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:imeOptions="actionNext"
+                android:theme="@style/TextInputLayoutLabelGrey">
+
+                <EditText
+                    android:id="@+id/edt_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:inputType="textMultiLine|textLongMessage"
+                    android:textColor="@color/colorBlack"
+                    android:backgroundTint="@color/dark_gray"
+                    android:textColorHint="@color/dark_gray"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/t7"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/t2"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:imeOptions="actionNext"
+                    android:theme="@style/TextInputLayoutLabelGrey">
+
+                    <EditText
+                        android:id="@+id/edt_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="From"
+                        android:inputType="number"
+                        android:textColor="@color/colorBlack"
+                        android:backgroundTint="@color/dark_gray"
+                        android:textColorHint="@color/dark_gray"
+                        android:imeOptions="actionNext"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/t3"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:imeOptions="actionNext"
+                    android:theme="@style/TextInputLayoutLabelGrey">
+
+                    <EditText
+                        android:id="@+id/edt_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="To (or expected)"
+                        android:inputType="number"
+                        android:textColor="@color/colorBlack"
+                        android:backgroundTint="@color/dark_gray"
+                        android:textColorHint="@color/dark_gray"
+                        android:imeOptions="actionNext"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/still_going"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dates"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="I currently volunteer here."/>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Submit"
+                android:layout_below="@id/still_going"
+                android:layout_toRightOf="@id/buttonCancel" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Cancel"
+                android:layout_below="@id/still_going"/>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

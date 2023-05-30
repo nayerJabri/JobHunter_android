@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/lang_label"
+        android:text="Language"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+
+    <TextView
+        android:id="@+id/licencebla"
+        android:text="Level: "
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lang_label"
+        android:layout_alignLeft="@+id/lang_label"
+        android:layout_alignStart="@+id/lang_label" />
+
+    <TextView
+        android:id="@+id/lang_level"
+        android:text="A2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lang_label"
+        android:layout_toRightOf="@id/licencebla"/>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyDark"
+        android:layout_below="@+id/lang_level"/>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#373447"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD Offre"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:layout_marginBottom="35dp"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#2c2938"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:id="@+id/Title"
+                android:hint="Title of the offre"
+                android:inputType="text"
+                android:layout_marginBottom="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#2c2938"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:id="@+id/Description"
+                android:hint=" Description of the offre "
+                android:inputType="textLongMessage"
+                android:layout_marginBottom="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#2c2938"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:id="@+id/date_begin"
+                android:hint=" Date begin of the offre   "
+                android:inputType="datetime"
+                android:layout_marginBottom="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#2c2938"
+                android:textSize="20dp"
+                android:id="@+id/experience"
+                android:textColor="#fff"
+                android:hint=" Years of experience       "
+                android:inputType="date"
+                android:layout_marginBottom="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/options_arrays"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:background="#2c2938"
+
+                android:id="@+id/content_type"
+                android:layout_marginBottom="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:background="#6c0936"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

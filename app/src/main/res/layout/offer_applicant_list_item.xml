@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+   android:padding="8dp"
+    android:background="@drawable/relative_layout_background"
+    android:layout_marginBottom="8dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/applicant_image"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:src="@drawable/linkedin"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+           <TextView
+               android:id="@+id/applicant_name"
+               android:textSize="15sp"
+               android:textColor="#000"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:layout_marginStart="8dp"
+               android:text="Name Applicant"
+               />
+               <TextView
+                   android:id="@+id/applicant_email"
+                   android:textSize="14dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:text="email"
+                   />
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:visibility="gone"
+                       android:id="@+id/applicant_natio"
+                       android:layout_width="40dp"
+                       android:src="@drawable/linkedin"
+                       android:layout_height="30dp"
+                       android:layout_marginTop="7dp"
+                       android:layout_marginLeft="10dp"/>
+                       <TextView
+                           android:visibility="gone"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Check profil"
+                           android:layout_marginTop="-20dp"
+                           android:layout_gravity="right"
+                           android:textColor="@color/colorPrimaryDark"
+                           />
+                   </LinearLayout>
+           </LinearLayout>
+               </LinearLayout>
+</RelativeLayout>

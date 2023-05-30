@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#373447"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey There,"
+            android:textColor="#fff"
+            android:textSize="40dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="30dp"
+            android:paddingRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:textColor="#fff"
+            android:paddingBottom="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_accent"
+                android:text="Check Profil"
+                android:textSize="15dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_accent"
+                android:layout_marginLeft="7dp"
+                android:text="Contact Me"
+                android:textSize="15dp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="170dp"
+            android:contentDescription="Profile Image"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/nayer" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Nayer Jabri"
+            android:paddingTop="-10dp"
+            android:textColor="#373447"
+            android:layout_height="match_parent"
+            android:textSize="20dp"/>
+    </LinearLayout></LinearLayout>
